@@ -10,3 +10,16 @@ C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compil
 C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.exe
 C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.xml
 C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.pdb
+A:\VisualBasic\Compilador\Compilador\Compilador\bin\Debug\Compilador.exe.config
+A:\VisualBasic\Compilador\Compilador\Compilador\bin\Debug\Compilador.exe
+A:\VisualBasic\Compilador\Compilador\Compilador\bin\Debug\Compilador.pdb
+A:\VisualBasic\Compilador\Compilador\Compilador\bin\Debug\Compilador.xml
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.vbproj.AssemblyReference.cache
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form1.resources
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Resources.resources
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.vbproj.GenerateResource.cache
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.vbproj.CoreCompileInputs.cache
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.exe
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.xml
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.pdb
+A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form2.resources
