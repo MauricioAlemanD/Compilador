@@ -36,11 +36,11 @@ Partial Class Form1
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.BackColor = System.Drawing.Color.Transparent
-        Me.lblTitulo.Font = New System.Drawing.Font("XOUMEG S57", 71.99999!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTitulo.Font = New System.Drawing.Font("XOUMEG S57", 36.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTitulo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(78, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.lblTitulo.Location = New System.Drawing.Point(24, 526)
+        Me.lblTitulo.Location = New System.Drawing.Point(28, 556)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(797, 115)
+        Me.lblTitulo.Size = New System.Drawing.Size(409, 58)
         Me.lblTitulo.TabIndex = 0
         Me.lblTitulo.Text = "TESCTEC-COMPILER"
         '
@@ -81,7 +81,7 @@ Partial Class Form1
         Me.lblEstadoDeCarga.BackColor = System.Drawing.Color.Transparent
         Me.lblEstadoDeCarga.Font = New System.Drawing.Font("XOUMEG S57", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEstadoDeCarga.ForeColor = System.Drawing.Color.FromArgb(CType(CType(252, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(96, Byte), Integer))
-        Me.lblEstadoDeCarga.Location = New System.Drawing.Point(526, 449)
+        Me.lblEstadoDeCarga.Location = New System.Drawing.Point(502, 449)
         Me.lblEstadoDeCarga.Name = "lblEstadoDeCarga"
         Me.lblEstadoDeCarga.Size = New System.Drawing.Size(0, 45)
         Me.lblEstadoDeCarga.TabIndex = 4
@@ -90,18 +90,17 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("XOUMEG S57", 26.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("XOUMEG S57", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(526, 388)
+        Me.Label2.Location = New System.Drawing.Point(502, 388)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(497, 43)
+        Me.Label2.Size = New System.Drawing.Size(468, 39)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "La manera mas sencilla de compilar "
+        Me.Label2.Text = "La manera mas sencilla de compilar ."
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1070, 650)
