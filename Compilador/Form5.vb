@@ -2,13 +2,6 @@
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form5
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
-
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
 
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtInput.Select()
@@ -16,10 +9,31 @@ Public Class Form5
 
     End Sub
 
-    Private Sub RegresarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegresarToolStripMenuItem.Click
+
+    Private Sub PictureBox13_Click(sender As Object, e As EventArgs) Handles PictureBox13.Click
+
+    End Sub
+
+    Private Sub PictureBox2_MouseHover(sender As Object, e As EventArgs) Handles btnNuevoInput.MouseHover
+        Dim rutaNuevoInput As String = "C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\agregarW.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnNuevoInput.Image = nuevaImagen
+
+    End Sub
+
+    Private Sub btnNuevoInput_Click(sender As Object, e As EventArgs) Handles btnNuevoInput.Click
+    End Sub
+
+    Private Sub btnNuevoInput_MouseLeave(sender As Object, e As EventArgs) Handles btnNuevoInput.MouseLeave
+        Dim rutaNuevoInput As String = "C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\agregar.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnNuevoInput.Image = nuevaImagen
+    End Sub
+
+    Private Sub RegresarToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles RegresarToolStripMenuItem.Click
         Dim cambioVentana As String
 
-        cambioVentana = MsgBox("¿Deseas regresar a la ventna de inicio?", vbQuestion + vbYesNo + vbDefaultButton1)
+        cambioVentana = MsgBox("¿Deseas regresar a la ventana de inicio?", vbQuestion + vbYesNo + vbDefaultButton1)
 
         If cambioVentana = vbYes Then
 

@@ -24,3 +24,5 @@ A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.xml
 A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.pdb
 A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form2.resources
 A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form5.resources
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.Form2.resources
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.Form5.resources
