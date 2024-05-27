@@ -26,3 +26,8 @@ A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form2.resou
 A:\VisualBasic\Compilador\Compilador\Compilador\obj\Debug\Compilador.Form5.resources
 C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.Form2.resources
 C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.Form5.resources
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\UserControl1.g.vb
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador_MarkupCompile.cache
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador_MarkupCompile.lref
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\UserControl1.baml
+C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\obj\Debug\Compilador.g.resources

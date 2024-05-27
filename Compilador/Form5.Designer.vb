@@ -24,26 +24,26 @@ Partial Class Form5
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtCaracteres = New System.Windows.Forms.TextBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtOperadores = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtOperandos = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtOperaciones = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtInput = New System.Windows.Forms.TextBox()
         Me.dkrIzqueirdo = New System.Windows.Forms.Panel()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.btnSalir = New System.Windows.Forms.PictureBox()
+        Me.btnLimpiar = New System.Windows.Forms.PictureBox()
+        Me.btnCompilar = New System.Windows.Forms.PictureBox()
+        Me.btnAnalizr = New System.Windows.Forms.PictureBox()
+        Me.btnGuardar = New System.Windows.Forms.PictureBox()
         Me.btnNuevoInput = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
@@ -54,40 +54,46 @@ Partial Class Form5
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CompilarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.txtNLineas = New System.Windows.Forms.Label()
+        Me.btnErrores = New System.Windows.Forms.PictureBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.btnProcesos = New System.Windows.Forms.PictureBox()
+        Me.gpxError = New System.Windows.Forms.GroupBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblErrorTemp = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.dkrIzqueirdo.SuspendLayout()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnLimpiar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnCompilar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnAnalizr, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnGuardar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel6.SuspendLayout()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnErrores, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnProcesos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gpxError.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.txtCaracteres)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -96,19 +102,19 @@ Partial Class Form5
         Me.Panel1.Size = New System.Drawing.Size(215, 265)
         Me.Panel1.TabIndex = 5
         '
-        'TextBox1
+        'txtCaracteres
         '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(7, 30)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(20)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox1.Size = New System.Drawing.Size(208, 235)
-        Me.TextBox1.TabIndex = 9
+        Me.txtCaracteres.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.txtCaracteres.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtCaracteres.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCaracteres.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.txtCaracteres.Location = New System.Drawing.Point(7, 30)
+        Me.txtCaracteres.Margin = New System.Windows.Forms.Padding(20)
+        Me.txtCaracteres.Multiline = True
+        Me.txtCaracteres.Name = "txtCaracteres"
+        Me.txtCaracteres.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtCaracteres.Size = New System.Drawing.Size(208, 235)
+        Me.txtCaracteres.TabIndex = 9
         '
         'Panel4
         '
@@ -141,7 +147,7 @@ Partial Class Form5
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.TextBox3)
+        Me.Panel2.Controls.Add(Me.txtOperadores)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel2.Location = New System.Drawing.Point(498, 366)
@@ -149,19 +155,19 @@ Partial Class Form5
         Me.Panel2.Size = New System.Drawing.Size(215, 265)
         Me.Panel2.TabIndex = 6
         '
-        'TextBox3
+        'txtOperadores
         '
-        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
-        Me.TextBox3.Location = New System.Drawing.Point(0, 30)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(20)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox3.Size = New System.Drawing.Size(208, 235)
-        Me.TextBox3.TabIndex = 11
+        Me.txtOperadores.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.txtOperadores.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOperadores.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOperadores.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.txtOperadores.Location = New System.Drawing.Point(0, 30)
+        Me.txtOperadores.Margin = New System.Windows.Forms.Padding(20)
+        Me.txtOperadores.Multiline = True
+        Me.txtOperadores.Name = "txtOperadores"
+        Me.txtOperadores.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtOperadores.Size = New System.Drawing.Size(208, 235)
+        Me.txtOperadores.TabIndex = 11
         '
         'Label2
         '
@@ -175,7 +181,7 @@ Partial Class Form5
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.TextBox2)
+        Me.Panel3.Controls.Add(Me.txtOperandos)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel3.Location = New System.Drawing.Point(277, 366)
@@ -183,19 +189,19 @@ Partial Class Form5
         Me.Panel3.Size = New System.Drawing.Size(215, 265)
         Me.Panel3.TabIndex = 6
         '
-        'TextBox2
+        'txtOperandos
         '
-        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(7, 30)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(20)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox2.Size = New System.Drawing.Size(208, 235)
-        Me.TextBox2.TabIndex = 10
+        Me.txtOperandos.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.txtOperandos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOperandos.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOperandos.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.txtOperandos.Location = New System.Drawing.Point(7, 30)
+        Me.txtOperandos.Margin = New System.Windows.Forms.Padding(20)
+        Me.txtOperandos.Multiline = True
+        Me.txtOperandos.Name = "txtOperandos"
+        Me.txtOperandos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtOperandos.Size = New System.Drawing.Size(208, 235)
+        Me.txtOperandos.TabIndex = 10
         '
         'Label3
         '
@@ -209,7 +215,7 @@ Partial Class Form5
         '
         'Panel5
         '
-        Me.Panel5.Controls.Add(Me.TextBox4)
+        Me.Panel5.Controls.Add(Me.txtOperaciones)
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel5.Location = New System.Drawing.Point(719, 366)
@@ -217,19 +223,19 @@ Partial Class Form5
         Me.Panel5.Size = New System.Drawing.Size(465, 265)
         Me.Panel5.TabIndex = 7
         '
-        'TextBox4
+        'txtOperaciones
         '
-        Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
-        Me.TextBox4.Location = New System.Drawing.Point(7, 31)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(20)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox4.Size = New System.Drawing.Size(458, 235)
-        Me.TextBox4.TabIndex = 12
+        Me.txtOperaciones.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.txtOperaciones.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtOperaciones.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOperaciones.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.txtOperaciones.Location = New System.Drawing.Point(7, 31)
+        Me.txtOperaciones.Margin = New System.Windows.Forms.Padding(20)
+        Me.txtOperaciones.Multiline = True
+        Me.txtOperaciones.Name = "txtOperaciones"
+        Me.txtOperaciones.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.txtOperaciones.Size = New System.Drawing.Size(458, 235)
+        Me.txtOperaciones.TabIndex = 12
         '
         'Label4
         '
@@ -259,11 +265,11 @@ Partial Class Form5
         'dkrIzqueirdo
         '
         Me.dkrIzqueirdo.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox14)
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox6)
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox5)
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox4)
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox3)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnSalir)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnLimpiar)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnCompilar)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnAnalizr)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnGuardar)
         Me.dkrIzqueirdo.Controls.Add(Me.btnNuevoInput)
         Me.dkrIzqueirdo.Controls.Add(Me.PictureBox1)
         Me.dkrIzqueirdo.Dock = System.Windows.Forms.DockStyle.Left
@@ -272,55 +278,55 @@ Partial Class Form5
         Me.dkrIzqueirdo.Size = New System.Drawing.Size(49, 661)
         Me.dkrIzqueirdo.TabIndex = 11
         '
-        'PictureBox14
+        'btnSalir
         '
-        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(3, 615)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 19
-        Me.PictureBox14.TabStop = False
+        Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
+        Me.btnSalir.Location = New System.Drawing.Point(3, 615)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(43, 43)
+        Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSalir.TabIndex = 19
+        Me.btnSalir.TabStop = False
         '
-        'PictureBox6
+        'btnLimpiar
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(3, 248)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 18
-        Me.PictureBox6.TabStop = False
+        Me.btnLimpiar.Image = CType(resources.GetObject("btnLimpiar.Image"), System.Drawing.Image)
+        Me.btnLimpiar.Location = New System.Drawing.Point(3, 248)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(43, 43)
+        Me.btnLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnLimpiar.TabIndex = 18
+        Me.btnLimpiar.TabStop = False
         '
-        'PictureBox5
+        'btnCompilar
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 199)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 17
-        Me.PictureBox5.TabStop = False
+        Me.btnCompilar.Image = CType(resources.GetObject("btnCompilar.Image"), System.Drawing.Image)
+        Me.btnCompilar.Location = New System.Drawing.Point(3, 199)
+        Me.btnCompilar.Name = "btnCompilar"
+        Me.btnCompilar.Size = New System.Drawing.Size(43, 43)
+        Me.btnCompilar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnCompilar.TabIndex = 17
+        Me.btnCompilar.TabStop = False
         '
-        'PictureBox4
+        'btnAnalizr
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(3, 150)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 16
-        Me.PictureBox4.TabStop = False
+        Me.btnAnalizr.Image = CType(resources.GetObject("btnAnalizr.Image"), System.Drawing.Image)
+        Me.btnAnalizr.Location = New System.Drawing.Point(3, 150)
+        Me.btnAnalizr.Name = "btnAnalizr"
+        Me.btnAnalizr.Size = New System.Drawing.Size(43, 43)
+        Me.btnAnalizr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnAnalizr.TabIndex = 16
+        Me.btnAnalizr.TabStop = False
         '
-        'PictureBox3
+        'btnGuardar
         '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 101)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 15
-        Me.PictureBox3.TabStop = False
+        Me.btnGuardar.Image = CType(resources.GetObject("btnGuardar.Image"), System.Drawing.Image)
+        Me.btnGuardar.Location = New System.Drawing.Point(3, 101)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(43, 43)
+        Me.btnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnGuardar.TabIndex = 15
+        Me.btnGuardar.TabStop = False
         '
         'btnNuevoInput
         '
@@ -367,7 +373,7 @@ Partial Class Form5
         Me.IniciarCompiladorToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.IniciarCompiladorToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.IniciarCompiladorToolStripMenuItem.Name = "IniciarCompiladorToolStripMenuItem"
-        Me.IniciarCompiladorToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.IniciarCompiladorToolStripMenuItem.Size = New System.Drawing.Size(136, 24)
         Me.IniciarCompiladorToolStripMenuItem.Text = "Limpiar"
         '
         'RegresarToolStripMenuItem
@@ -375,7 +381,7 @@ Partial Class Form5
         Me.RegresarToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.RegresarToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.RegresarToolStripMenuItem.Name = "RegresarToolStripMenuItem"
-        Me.RegresarToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.RegresarToolStripMenuItem.Size = New System.Drawing.Size(136, 24)
         Me.RegresarToolStripMenuItem.Text = "Regresar"
         '
         'AyudaToolStripMenuItem
@@ -406,28 +412,39 @@ Partial Class Form5
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Panel6.Controls.Add(Me.PictureBox13)
+        Me.Panel6.Controls.Add(Me.txtNLineas)
+        Me.Panel6.Controls.Add(Me.btnErrores)
         Me.Panel6.Controls.Add(Me.PictureBox7)
         Me.Panel6.Controls.Add(Me.PictureBox8)
         Me.Panel6.Controls.Add(Me.PictureBox9)
         Me.Panel6.Controls.Add(Me.PictureBox10)
         Me.Panel6.Controls.Add(Me.PictureBox11)
-        Me.Panel6.Controls.Add(Me.PictureBox12)
+        Me.Panel6.Controls.Add(Me.btnProcesos)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.Location = New System.Drawing.Point(49, 637)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1135, 24)
         Me.Panel6.TabIndex = 13
         '
-        'PictureBox13
+        'txtNLineas
         '
-        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(1086, 3)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox13.TabIndex = 19
-        Me.PictureBox13.TabStop = False
+        Me.txtNLineas.AutoSize = True
+        Me.txtNLineas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(191, Byte), Integer), CType(CType(199, Byte), Integer), CType(CType(213, Byte), Integer))
+        Me.txtNLineas.Location = New System.Drawing.Point(11, 8)
+        Me.txtNLineas.Name = "txtNLineas"
+        Me.txtNLineas.Size = New System.Drawing.Size(0, 13)
+        Me.txtNLineas.TabIndex = 10
+        Me.txtNLineas.UseMnemonic = False
+        '
+        'btnErrores
+        '
+        Me.btnErrores.Image = CType(resources.GetObject("btnErrores.Image"), System.Drawing.Image)
+        Me.btnErrores.Location = New System.Drawing.Point(1086, 3)
+        Me.btnErrores.Name = "btnErrores"
+        Me.btnErrores.Size = New System.Drawing.Size(20, 20)
+        Me.btnErrores.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnErrores.TabIndex = 19
+        Me.btnErrores.TabStop = False
         '
         'PictureBox7
         '
@@ -479,15 +496,60 @@ Partial Class Form5
         Me.PictureBox11.TabIndex = 14
         Me.PictureBox11.TabStop = False
         '
-        'PictureBox12
+        'btnProcesos
         '
-        Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(1112, 3)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox12.TabIndex = 13
-        Me.PictureBox12.TabStop = False
+        Me.btnProcesos.Image = CType(resources.GetObject("btnProcesos.Image"), System.Drawing.Image)
+        Me.btnProcesos.Location = New System.Drawing.Point(1112, 3)
+        Me.btnProcesos.Name = "btnProcesos"
+        Me.btnProcesos.Size = New System.Drawing.Size(20, 20)
+        Me.btnProcesos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnProcesos.TabIndex = 13
+        Me.btnProcesos.TabStop = False
+        '
+        'gpxError
+        '
+        Me.gpxError.Controls.Add(Me.Label6)
+        Me.gpxError.Controls.Add(Me.lblErrorTemp)
+        Me.gpxError.Location = New System.Drawing.Point(794, 424)
+        Me.gpxError.Name = "gpxError"
+        Me.gpxError.Size = New System.Drawing.Size(361, 210)
+        Me.gpxError.TabIndex = 14
+        Me.gpxError.TabStop = False
+        Me.gpxError.Visible = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.LightGray
+        Me.Label6.Location = New System.Drawing.Point(334, 14)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(21, 21)
+        Me.Label6.TabIndex = 1
+        Me.Label6.Text = "x"
+        '
+        'lblErrorTemp
+        '
+        Me.lblErrorTemp.AutoSize = True
+        Me.lblErrorTemp.Font = New System.Drawing.Font("Gadugi", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblErrorTemp.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.lblErrorTemp.Location = New System.Drawing.Point(7, 21)
+        Me.lblErrorTemp.Name = "lblErrorTemp"
+        Me.lblErrorTemp.Size = New System.Drawing.Size(51, 19)
+        Me.lblErrorTemp.TabIndex = 0
+        Me.lblErrorTemp.Text = "Error: "
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Gadugi", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.LightGray
+        Me.Label7.Location = New System.Drawing.Point(1159, 4)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(21, 21)
+        Me.Label7.TabIndex = 2
+        Me.Label7.Text = "x"
         '
         'Form5
         '
@@ -496,6 +558,8 @@ Partial Class Form5
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(62, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1184, 661)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.gpxError)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.dkrIzqueirdo)
@@ -520,23 +584,26 @@ Partial Class Form5
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
         Me.dkrIzqueirdo.ResumeLayout(False)
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnLimpiar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnCompilar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnAnalizr, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnGuardar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel6.ResumeLayout(False)
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel6.PerformLayout()
+        CType(Me.btnErrores, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnProcesos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gpxError.ResumeLayout(False)
+        Me.gpxError.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -552,10 +619,10 @@ Partial Class Form5
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents txtInput As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtCaracteres As TextBox
+    Friend WithEvents txtOperadores As TextBox
+    Friend WithEvents txtOperandos As TextBox
+    Friend WithEvents txtOperaciones As TextBox
     Friend WithEvents dkrIzqueirdo As Panel
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents OpcionesToolStripMenuItem As ToolStripMenuItem
@@ -565,18 +632,23 @@ Partial Class Form5
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CompilarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents btnLimpiar As PictureBox
+    Friend WithEvents btnCompilar As PictureBox
+    Friend WithEvents btnAnalizr As PictureBox
+    Friend WithEvents btnGuardar As PictureBox
     Friend WithEvents btnNuevoInput As PictureBox
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents btnErrores As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents btnProcesos As PictureBox
+    Friend WithEvents btnSalir As PictureBox
+    Friend WithEvents txtNLineas As Label
+    Friend WithEvents gpxError As GroupBox
+    Friend WithEvents lblErrorTemp As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

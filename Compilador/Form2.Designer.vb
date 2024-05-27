@@ -29,21 +29,21 @@ Partial Class Form2
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.bgInicio = New System.Windows.Forms.PictureBox()
         Me.dkrIzqueirdo = New System.Windows.Forms.Panel()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.btnSalir = New System.Windows.Forms.PictureBox()
+        Me.btnNuevoInput = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.OpcionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.IniciarCompiladorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnNuevoInput = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.bgInicio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.dkrIzqueirdo.SuspendLayout()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label2
@@ -88,7 +88,7 @@ Partial Class Form2
         'dkrIzqueirdo
         '
         Me.dkrIzqueirdo.BackColor = System.Drawing.Color.FromArgb(CType(CType(49, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.dkrIzqueirdo.Controls.Add(Me.PictureBox14)
+        Me.dkrIzqueirdo.Controls.Add(Me.btnSalir)
         Me.dkrIzqueirdo.Controls.Add(Me.btnNuevoInput)
         Me.dkrIzqueirdo.Controls.Add(Me.PictureBox2)
         Me.dkrIzqueirdo.Dock = System.Windows.Forms.DockStyle.Left
@@ -97,15 +97,25 @@ Partial Class Form2
         Me.dkrIzqueirdo.Size = New System.Drawing.Size(49, 700)
         Me.dkrIzqueirdo.TabIndex = 12
         '
-        'PictureBox14
+        'btnSalir
         '
-        Me.PictureBox14.Image = CType(resources.GetObject("PictureBox14.Image"), System.Drawing.Image)
-        Me.PictureBox14.Location = New System.Drawing.Point(3, 654)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(43, 43)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox14.TabIndex = 19
-        Me.PictureBox14.TabStop = False
+        Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
+        Me.btnSalir.Location = New System.Drawing.Point(3, 654)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(43, 43)
+        Me.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnSalir.TabIndex = 19
+        Me.btnSalir.TabStop = False
+        '
+        'btnNuevoInput
+        '
+        Me.btnNuevoInput.Image = CType(resources.GetObject("btnNuevoInput.Image"), System.Drawing.Image)
+        Me.btnNuevoInput.Location = New System.Drawing.Point(3, 52)
+        Me.btnNuevoInput.Name = "btnNuevoInput"
+        Me.btnNuevoInput.Size = New System.Drawing.Size(43, 43)
+        Me.btnNuevoInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnNuevoInput.TabIndex = 14
+        Me.btnNuevoInput.TabStop = False
         '
         'PictureBox2
         '
@@ -161,16 +171,6 @@ Partial Class Form2
         Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(107, 24)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
-        'btnNuevoInput
-        '
-        Me.btnNuevoInput.Image = CType(resources.GetObject("btnNuevoInput.Image"), System.Drawing.Image)
-        Me.btnNuevoInput.Location = New System.Drawing.Point(3, 52)
-        Me.btnNuevoInput.Name = "btnNuevoInput"
-        Me.btnNuevoInput.Size = New System.Drawing.Size(43, 43)
-        Me.btnNuevoInput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnNuevoInput.TabIndex = 14
-        Me.btnNuevoInput.TabStop = False
-        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -191,11 +191,11 @@ Partial Class Form2
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.bgInicio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.dkrIzqueirdo.ResumeLayout(False)
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnSalir, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.btnNuevoInput, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -205,7 +205,7 @@ Partial Class Form2
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents dkrIzqueirdo As Panel
-    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents btnSalir As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents OpcionesToolStripMenuItem As ToolStripMenuItem

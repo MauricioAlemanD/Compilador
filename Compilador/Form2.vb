@@ -51,4 +51,32 @@ Public Class Form2
     Private Sub dkrIzqueirdo_Paint(sender As Object, e As PaintEventArgs) Handles dkrIzqueirdo.Paint
 
     End Sub
+
+    Private Sub btnNuevoInput_MouseHover(sender As Object, e As EventArgs) Handles btnNuevoInput.MouseHover
+        Dim rutaNuevoInput As String = "C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\usuarioW.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnNuevoInput.Image = nuevaImagen
+    End Sub
+
+    Private Sub btnNuevoInput_MouseLeave(sender As Object, e As EventArgs) Handles btnNuevoInput.MouseLeave
+        Dim rutaNuevoInput As String = "C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\usuario.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnNuevoInput.Image = nuevaImagen
+    End Sub
+
+    Private Sub PictureBox14_MouseHover(sender As Object, e As EventArgs) Handles btnSalir.MouseHover
+        Dim rutaNuevoInput As String = "C:\maun\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\salida-de-emergenciaW.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnSalir.Image = nuevaImagen
+    End Sub
+
+    Private Sub PictureBox14_MouseLeave(sender As Object, e As EventArgs) Handles btnSalir.MouseLeave
+        Dim rutaNuevoInput As String = "C:\Users\m4ury\OneDrive\Documentos\GitHub\Compilador\Compilador\resc\salida-de-emergencia.png"
+        Dim nuevaImagen As Image = Image.FromFile(rutaNuevoInput)
+        btnSalir.Image = nuevaImagen
+    End Sub
+
+    Private Sub Form2_KeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+
+    End Sub
 End Class

@@ -32,5 +32,15 @@ Compilador
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="T:Compilador.UserControl1">
+<summary>
+UserControl1
+</summary>
+</member>
+<member name="M:Compilador.UserControl1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
 </members>
 </doc>
